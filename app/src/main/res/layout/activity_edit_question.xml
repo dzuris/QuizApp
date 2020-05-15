@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".EditQuestion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="2000dp">
+
+        <EditText
+            android:id="@+id/et_editQuestion_question"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/background_question"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="225"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV__editQuestion_question" />
+
+        <EditText
+            android:id="@+id/et_editQuestion_optionA"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_wrong_question"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV_moznostA" />
+
+        <EditText
+            android:id="@+id/et_editQuestion_optionB"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_wrong_question"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV_moznostB" />
+
+        <EditText
+            android:id="@+id/et_editQuestion_optionC"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_wrong_question"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV_moznostC" />
+
+        <EditText
+            android:id="@+id/et_editQuestion_optionCorrect"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_correct_question"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtV_moznostCorrect" />
+
+        <Button
+            android:id="@+id/btn_save_editQuestion"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_button"
+            android:text="@string/Save"
+            android:textColor="@color/colorTextButton"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_deleteQuestion" />
+
+        <Button
+            android:id="@+id/btn_deleteQuestion"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/background_wrong_question"
+            android:text="@string/DeleteQuestion"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewCategory_editQuestion" />
+
+        <TextView
+            android:id="@+id/tv_editQuestion_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/Categor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCounter_optionCorrect" />
+
+        <TextView
+            android:id="@+id/txtV_moznostA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/Option1"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCounter_question" />
+
+        <TextView
+            android:id="@+id/txtV_moznostB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/Option2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCounter_optionA" />
+
+        <TextView
+            android:id="@+id/txtV_moznostC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/Option3"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCounter_optionB" />
+
+        <TextView
+            android:id="@+id/txtV_moznostCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/OptionCorrect"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCounter_optionC" />
+
+        <TextView
+            android:id="@+id/txtV__editQuestion_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/Question"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/et_editQuestion_question"
+            app:layout_constraintStart_toStartOf="@+id/et_editQuestion_question"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCategory_editQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_editQuestion_category"
+            app:layout_constraintStart_toStartOf="@+id/tv_editQuestion_category"
+            app:layout_constraintTop_toBottomOf="@+id/tv_editQuestion_category" />
+
+        <ImageView
+            android:id="@+id/imageViewCategory_editQuestion"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategory_editQuestion"
+            app:srcCompat="@drawable/image_none" />
+
+        <TextView
+            android:id="@+id/tvCounter_question"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/et_editQuestion_question"
+            app:layout_constraintTop_toBottomOf="@+id/et_editQuestion_question" />
+
+        <TextView
+            android:id="@+id/tvCounter_optionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="@+id/et_editQuestion_optionA"
+            app:layout_constraintTop_toBottomOf="@+id/et_editQuestion_optionA" />
+
+        <TextView
+            android:id="@+id/tvCounter_optionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="@+id/et_editQuestion_optionB"
+            app:layout_constraintTop_toBottomOf="@+id/et_editQuestion_optionB" />
+
+        <TextView
+            android:id="@+id/tvCounter_optionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="@+id/et_editQuestion_optionC"
+            app:layout_constraintTop_toBottomOf="@+id/et_editQuestion_optionC" />
+
+        <TextView
+            android:id="@+id/tvCounter_optionCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="@+id/et_editQuestion_optionCorrect"
+            app:layout_constraintTop_toBottomOf="@+id/et_editQuestion_optionCorrect" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

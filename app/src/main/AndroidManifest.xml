@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".QuestionList"></activity>
+        <activity android:name=".Question" />
+        <activity
+            android:name=".Pop"
+            android:theme="@style/AppTheme.CustomeTheme"
+            />
+        <activity android:name=".PlayCategory" />
+        <activity android:name=".Options" />
+        <activity android:name=".ImagesList" />
+        <activity android:name=".End" />
+        <activity android:name=".EditQuestion" />
+        <activity android:name=".DeleteCategory" />
+        <activity android:name=".ChangeQuestionCount" />
+        <activity android:name=".AddQuestion" />
+        <activity android:name=".AddCategory" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

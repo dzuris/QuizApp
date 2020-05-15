@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="Add">Add</string>
+    <string name="AddCategory">Add Category</string>
+    <string name="AddCategoryOnClickDeleteCategory">Click to delete category</string>
+    <string name="AddQuestion">Add Question</string>
+    <string name="Categor">Category</string>
+    <string name="Categories">Categories</string>
+    <string name="CategWasAdd">Category was successfully added</string>
+    <string name="CategWasDeleted">Category was successfully deleted</string>
+    <string name="ChangeQuestionsCount">Change questions count</string>
+    <string name="ChooseQuestCount">Set questions number</string>
+    <string name="ConfirmCategory">category</string>
+    <string name="ConfirmQuestion">question</string>
+    <string name="Congratulations">Congratulations</string>
+    <string name="CorrectOption">Correct option</string>
+    <string name="DeleteCategory">Delete category</string>
+    <string name="DeleteCheckTitle">Category delete</string>
+    <string name="DeleteQuestion">Delete question</string>
+    <string name="FillAllPole">Please fill in all poles</string>
+    <string name="FillPole">Please fill a pole</string>
+    <string name="From">from</string>
+    <string name="QuestionList">Questions list</string>
+    <string name="MaxQuestCount">Maximum questions number</string>
+    <string name="Menu">Menu</string>
+    <string name="ModeDeathmatch" translatable="false">Death</string>
+    <string name="ModeNormal" translatable="false">Normal</string>
+    <string name="NewGame">New game</string>
+    <string name="Next">Next</string>
+    <string name="No">No</string>
+    <string name="Option">Option</string>
+    <string name="Options">Options</string>
+    <string name="Question">Question</string>
+    <string name="QuestionOne">question</string>
+    <string name="QuestionMore">questions</string>
+    <string name="QuestionWasDeleted">Question was successfully deleted</string>
+    <string name="Save">Save</string>
+    <string name="ThisCategoryExist">This category already exist</string>
+    <string name="ThisQuestionExist">This question already exist</string>
+    <string name="Title" translatable="false">Quiz</string>
+    <string name="TryAgain">Try it again</string>
+    <string name="WeDontHaveQuestionCategory">We dont have any questions for you in this category</string>
+    <string name="WeDontHaveQuestion">We don\'t have any questions for you</string>
+    <string name="YouLost">You lost</string>
+    <string name="YouWin">You won</string>
+    <string name="Cancel">Cancel</string>
+    <string name="ChangeImage">Change picture</string>
+    <string name="DeleteCheckMessage">"Do you really want to delete this category: "</string>
+    <string name="CorrectAnswered">"You answered correctly on "</string>
+    <string name="Yes">Yes</string>
+    <string name="OneQuestionLeft">question left</string>
+    <string name="MoreQuestionsLeft">questions left</string>
+    <string name="Score">Score:</string>
+    <string name="SelectCategory">Select category</string>
+    <string name="QuestionChanged">Question changed</string>
+    <string name="QuestionNotChanged">Question not changed</string>
+    <string name="DeleteQuestionAsk">Do you really want to delete this question?</string>
+    <string name="Option1">Option 1</string>
+    <string name="Option2">Option 2</string>
+    <string name="Option3">Option 3</string>
+    <string name="OptionCorrect">Option Correct</string>
+    <string name="SelectFromGallery">Select from gallery</string>
+    <string name="Clear">Clear</string>
+    <string name="NumberChanged">Number of questions was successfully changed</string>
+    <string name="NumberNotChanged">Number was not changed</string>
+    <string name="Images">Images</string>
+    <string name="Image">Image</string>
+    <string name="Icon">Icon</string>
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".AddQuestion">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView1_addQuestion"
+            android:layout_width="115dp"
+            android:layout_height="177dp"
+            android:background="@drawable/millionaire_image_person"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ImageViewBehind_addQuestion"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_white_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCatTitle_addQuestion" />
+
+        <Button
+            android:id="@+id/btn_addQuestion"
+            android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_button"
+            android:text="@string/Save"
+            android:textColor="@color/colorTextButton"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ImageViewBehind_addQuestion" />
+
+        <EditText
+            android:id="@+id/etQuestion_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/Question"
+            android:maxLength="225"
+            android:inputType="textMultiLine"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etOption1_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/Option1"
+            android:maxLength="120"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addQuestion_questionCounter" />
+
+        <EditText
+            android:id="@+id/etOption2_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/Option2"
+            android:maxLength="120"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addQuestion_optionACounter" />
+
+        <EditText
+            android:id="@+id/etOption3_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/Option3"
+            android:maxLength="120"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addQuestion_optionBCounter" />
+
+        <EditText
+            android:id="@+id/etOptionCorrect_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/OptionCorrect"
+            android:maxLength="120"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addQuestion_optionCCounter" />
+
+        <Button
+            android:id="@+id/btn_leftArrow_addQuestion"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_button"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintBottom_toBottomOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintEnd_toStartOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintStart_toStartOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintTop_toTopOf="@+id/ImageViewBehind_addQuestion" />
+
+        <Button
+            android:id="@+id/btn_rightArrow_addQuestion"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_button"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintBottom_toBottomOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintEnd_toEndOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintStart_toEndOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintTop_toTopOf="@+id/ImageViewBehind_addQuestion" />
+
+        <TextView
+            android:id="@+id/tvCategory_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintEnd_toStartOf="@+id/btn_rightArrow_addQuestion"
+            app:layout_constraintStart_toEndOf="@+id/btn_leftArrow_addQuestion"
+            app:layout_constraintTop_toTopOf="@+id/ImageViewBehind_addQuestion" />
+
+        <TextView
+            android:id="@+id/tvCatTitle_addQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/Categor"
+            app:layout_constraintStart_toStartOf="@+id/ImageViewBehind_addQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/imgViewCategory_addQuestion" />
+
+        <ImageView
+            android:id="@+id/imgViewCategory_addQuestion"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addQuestion_optionCorrectCounter"
+            app:srcCompat="@drawable/person_another" />
+
+        <TextView
+            android:id="@+id/addQuestion_questionCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_question"
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/colorTextButton"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/etQuestion_addQuestion"
+            app:layout_constraintStart_toStartOf="@+id/etQuestion_addQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/etQuestion_addQuestion" />
+
+        <TextView
+            android:id="@+id/addQuestion_optionACounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_question"
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintEnd_toEndOf="@+id/etOption1_addQuestion"
+            app:layout_constraintStart_toStartOf="@+id/etOption1_addQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/etOption1_addQuestion" />
+
+        <TextView
+            android:id="@+id/addQuestion_optionBCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_question"
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintEnd_toEndOf="@+id/etOption2_addQuestion"
+            app:layout_constraintStart_toStartOf="@+id/etOption2_addQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/etOption2_addQuestion" />
+
+        <TextView
+            android:id="@+id/addQuestion_optionCCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_question"
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintEnd_toEndOf="@+id/etOption3_addQuestion"
+            app:layout_constraintStart_toStartOf="@+id/etOption3_addQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/etOption3_addQuestion" />
+
+        <TextView
+            android:id="@+id/addQuestion_optionCorrectCounter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_question"
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/colorTextButton"
+            app:layout_constraintEnd_toEndOf="@+id/etOptionCorrect_addQuestion"
+            app:layout_constraintStart_toStartOf="@+id/etOptionCorrect_addQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/etOptionCorrect_addQuestion" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

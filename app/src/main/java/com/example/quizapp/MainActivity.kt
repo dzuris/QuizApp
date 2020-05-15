@@ -10,7 +10,7 @@ import com.example.quizapp.database.DatabaseHelper
 class MainActivity : AppCompatActivity() {
 
     private var db: DatabaseHelper? = null
-    private var testGithub: Int = 15
+    private var testGithub: Int = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
